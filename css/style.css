@@ -1,0 +1,136 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    width: 50px;
+}
+.title_logo{
+    display: flex;
+    margin-left: 5px;
+}
+.title{
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: deeppink;
+    line-height: 1em;
+}
+
+
+
+li{
+    display: block;
+    list-style: none;
+    margin-right: 12px;
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+.active{
+    color: deeppink;
+}
+.header_navbar{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.navbar{
+    display: none;
+    background-color: rgb(255, 208, 255);
+    text-align: center;
+    width: 100%;
+    transition: 1s;
+}
+
+
+/* hamburger icon styling */
+i{
+    border: 1px solid deeppink;
+    padding: 5px 10px;
+    color: pink;
+    outline: none;
+}
+.menu-icon{
+    color: white;
+    box-sizing: border-box;
+    margin: 8px 10px 0 0;
+    cursor: pointer;
+    outline: none;
+}
+
+/* header background image */
+.page-title{
+    font-size: 1.5em;
+    color: rgb(48, 38, 38);
+}
+.page-title-container{
+    padding: 80px 0 50px;
+    margin-left: 5px;
+    background-position: center;
+    background-size: cover;
+}
+.page-description{
+    color: rgb(161, 160, 160);
+    line-height: 2em;
+}
+.header_button{
+    padding: 10px 25px;
+    border-radius: 2em;
+}
+.download-button{
+    color: white;
+    background-color: rgb(255, 20, 98);
+    border: none;
+    outline: none;
+}
+.call-to-action{
+    background-color: white;
+    color: rgb(255, 20, 98);
+    border: none;
+    border: 1px solid rgb(255, 20, 98);
+    margin-left: 10px;
+}
+
+/* service section */
+.service_title{
+    text-align: center;
+}
+.service_title::after{
+    content: "";
+    display: block;
+    width: 50px;
+    margin: 5px auto;
+    border-bottom: 2px solid pink;
+}
+
+
+
+
+@media(min-width: 500px) and (max-width: 800px){
+    
+}
+
+@media(min-width: 800px){
+    .page-title{
+        font-size: 2.5em;
+    }
+    .header_navbar{
+        display: flex;
+        justify-content: space-between;
+        /* width: 80%; */
+        flex-wrap: nowrap;
+    }
+    .navbar{
+        display: block;
+        background-color: white;
+    }
+    .menu-icon{
+        display: none;
+    }
+    li{
+        display: inline-block;
+        padding: 0;
+    }
+}
