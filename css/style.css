@@ -123,6 +123,7 @@ i{
 /* service section */
 .service_title{
     text-align: center;
+    font-size: 1.5em;
 }
 .service_title::after{
     content: "";
@@ -151,6 +152,7 @@ i{
     border-radius: 50%;
 }
 .service_card_description{
+    font-size: 0.8em;
     line-height: 1.5em;
     color: rgb(180, 180, 180);
 }
