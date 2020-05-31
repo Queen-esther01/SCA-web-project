@@ -37,6 +37,10 @@ li:hover{
     flex-wrap: wrap;
     margin: 0;
 }
+header{
+    width: 90%;
+    margin: auto;
+}
 .navbar{
     display: none;
     background-color: rgba(255, 192, 203, 0.24);
@@ -127,6 +131,29 @@ i{
     margin: 5px auto;
     border-bottom: 2px solid pink;
 }
+.service_card_container{
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+    grid-gap: 10px;
+}
+.service_card_wrapper{
+    text-align: center;
+    border: 1px solid rgb(233, 233, 233);
+    padding: 20px;
+    box-shadow: 0.4px 0.4px 4px 0.4px rgb(233, 233, 233);
+}
+.service_icon{
+    width: 30px;
+    border: 1px solid rgb(233, 233, 233);
+    padding: 20px;
+    border-radius: 50%;
+}
+.service_card_description{
+    line-height: 1.5em;
+    color: rgb(180, 180, 180);
+}
 
 
 
@@ -134,6 +161,11 @@ i{
 @media(min-width: 500px) and (max-width: 800px){
     .header_illustration{
         width: 500px;
+    }
+
+    /* service section */
+    .service_card_container{
+        grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
     }
 }
 
@@ -170,5 +202,10 @@ i{
     /* header image */
     .header_illustration{
         width: 500px;
+    }
+
+    /* service section */
+    .service_card_container{
+        grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
     }
 }
