@@ -75,6 +75,7 @@ i{
     padding: 80px 0 50px;
     margin-left: 5px;
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .page-description{
@@ -82,15 +83,11 @@ i{
     line-height: 2em;
     font-size: 0.8em;
 }
-.illustration_container{
-    display: block;
-    
-}
 .header_illustration{
-    display: block;
     width: 300px;
  }
-.header_button{
+.header_button,
+.statistics_button{
     padding: 10px 20px;
     border-radius: 2em;
     border: none;
@@ -125,7 +122,8 @@ i{
     text-align: center;
     font-size: 1.5em;
 }
-.service_title::after{
+.service_title::after,
+.feature_section_heading::after{
     content: "";
     display: block;
     width: 50px;
@@ -151,17 +149,111 @@ i{
     padding: 20px;
     border-radius: 50%;
 }
+.service_card_title{
+    font-size: 15px;
+}
 .service_card_description{
     font-size: 0.8em;
     line-height: 2em;
     color: rgb(180, 180, 180);
 }
 
+/* statistics section */
+.statistics_section{
+    background-color: rgb(251, 251, 251);
+}
+.statistics_section_wrapper{
+    width: 90%;
+    margin: 30px auto;
+    padding: 70px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.statistics_illustration{
+    width: 300px;
+}
+.statistics_heading{
+    color: rgb(156, 156, 156);
+}
+.statistics_prinary{
+    color: rgb(48, 38, 38);
+}
+.statistics_description{
+    color: rgb(156, 156, 156);
+    line-height: 1.5em;
+    font-size: 0.8em;
+}
+.statistics_button{
+    margin: 30px 0;
+    color: white;
+    background-color: rgb(255, 20, 98);
+    border: 1px solid rgb(255, 20, 98);
+}
+.statistics_button:hover{
+    color: rgb(255, 20, 98);
+    background-color: white;
+    border: 1px solid rgb(255, 20, 98);
+}
+
+/* feature section */
+.feature_section{
+    margin-top: 40px;
+}
+.feature_section_heading{
+    text-align: center;
+}
+.feature_section_wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
+    grid-gap: 10px;
+}
+.feature_card_container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+.feature_card_wrapper{
+    width: 400px;
+    margin: 10px auto;
+    border: 1px solid rgb(233, 233, 233);
+    box-shadow: 0.4px 0.4px 4px 0.4px rgb(233, 233, 233);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: right;
+}
+.feature_heading{
+    font-size: 16px;
+}
+.feature_description{
+    font-size: 0.8em;
+}
+.feature_desc2{
+    text-align: left;
+}
+.feature_image_wrapper{
+    width: 400px;
+    margin: auto;
+}
+.feature_image{
+    width: 100%;
+}
+.feature_icon{
+    width: 30px;
+    margin-top: 40px;
+}
 
 
 
-@media(min-width: 500px) and (max-width: 800px){
-    .header_illustration{
+
+
+
+
+
+@media(min-width: 500px) and (max-width: 900px){
+    .header_illustration,
+    .statistics_illustration{
         width: 500px;
     }
 
@@ -169,10 +261,19 @@ i{
     .service_card_container{
         grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
     }
+
+    /* feature_section */
+    /* .feature_section_wrapper{
+        grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    } */
+    .feature_image_wrapper{
+        display: none;
+    }
+    
 }
 
 /* styles for big screens */
-@media(min-width: 800px){
+@media(min-width: 900px){
     .page-title{
         font-size: 2.5em;
     }
@@ -209,5 +310,32 @@ i{
     /* service section */
     .service_card_container{
         grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    }
+
+    /* statistics section */
+    .statistics_primary{
+        font-size: 2em;
+    }
+    .statistics_illustration{
+        width: 500px;
+    }
+    .statistics_description{
+        font-size: 1em;
+    }
+
+    /* features section */
+    /* .feature_card_container{
+        grid-template-columns: repeat(auto-fit,minmax(30%,1fr));
+    } */
+    .feature_section_wrapper{
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(20%,1fr));
+        grid-gap: 10px
+    }
+    .feature_heading{
+        font-size: 18px;
+    }
+    .feature_description{
+        font-size: 16px;
     }
 }
