@@ -6,7 +6,13 @@
     <title>She-Code-Africa Landing Page Web Project</title>
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script> -->
+    
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
 </head>
 <body>
     <main>
@@ -48,9 +54,9 @@
         </header>
 
         <section class="services_section">
-            <h2 class="service_title">Our Services</h2>
+            <h2 class="service_title wow fadeInUp">Our Services</h2>
             <div class="service_card_container">
-                <div class="service_card_wrapper">
+                <div class="service_card_wrapper wow fadeInLeft">
                     <div class="service_icon_container">
                         <img class="service_icon" src="images/settings_icon.png" alt="settings-icon">
                     </div>
@@ -60,7 +66,7 @@
                     bibendum gravida</p>
                 </div>
 
-                <div class="service_card_wrapper">
+                <div class="service_card_wrapper wow fadeInLeft">
                     <div class="service_icon_container">
                         <img class="service_icon" src="images/chart.png" alt="chart-icon">
                     </div>
@@ -70,7 +76,7 @@
                     bibendum gravida</p>
                 </div>
 
-                <div class="service_card_wrapper">
+                <div class="service_card_wrapper wow fadeInLeft">
                     <div class="service_icon_container">
                         <img class="service_icon" src="images/user.png" alt="user-icon">
                     </div>
@@ -80,7 +86,7 @@
                     bibendum gravida</p>
                 </div>
 
-                <div class="service_card_wrapper">
+                <div class="service_card_wrapper wow fadeInLeft">
                     <div class="service_icon_container">
                         <img class="service_icon" src="images/stack.png" alt="stack-icon">
                     </div>
@@ -90,7 +96,7 @@
                     bibendum gravida</p>
                 </div>
 
-                <div class="service_card_wrapper">
+                <div class="service_card_wrapper wow fadeInLeft">
                     <div class="service_icon_container">
                         <img class="service_icon" src="images/phone.png" alt="phone-icon">
                     </div>
@@ -100,7 +106,7 @@
                     bibendum gravida</p>
                 </div>
 
-                <div class="service_card_wrapper">
+                <div class="service_card_wrapper wow fadeInLeft">
                     <div class="service_icon_container">
                         <img class="service_icon" src="images/rocket.png" alt="rocket-icon">
                     </div>
@@ -286,7 +292,17 @@
         </section>
     </main>
 
-
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!-- Bootstrap tooltips
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script> -->
+    
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
     <script>
         //menu toggle button
         // $(document).ready(function(){
@@ -305,6 +321,11 @@
                 navbar.style.transition = "1s";
             }
         })
+
+        $( document ).ready(function() {
+            new WOW().init();
+        });
     </script>
+    
 </body>
 </html>
