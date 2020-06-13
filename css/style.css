@@ -266,13 +266,14 @@ i{
 }
 
 .teammate_image{
-    width: 40%;
-    /* height: 50%; */
+    width: 45%;
+    /* height: 30%; */
 }
 .team_container{
     display: flex;
     margin: auto;
-    height: 150px;
+    height: 140px;
+    /* overflow: auto; */
     background-color: white;
     /* border: 1px solid rgb(241, 241, 241); */
     box-shadow: 0.4px 0.4px 4px 0.4px rgb(238, 238, 238);
@@ -295,7 +296,7 @@ i{
     
 }
 .teammate_description{
-    font-size: 0.8em;
+    font-size: 0.7em;
     line-height: 1.5em;
     color: rgb(161, 160, 160);
 }
@@ -311,6 +312,7 @@ i{
     grid-template-columns: repeat(auto-fit,minmax(50%,1fr));
     grid-gap: 20px;
 }
+
 
 /* pricing section */
 .pricing_heading{
@@ -401,7 +403,7 @@ i{
         grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
     
     }
-    .team_container{
+   .team_container{
         display: flex;
         flex-direction: column;
         margin: auto;
@@ -445,7 +447,20 @@ i{
     }
 }
 
-
+@media(min-width: 700px) and (max-width: 900px){
+    .team_container{
+        width: 300px;
+    }
+    .teammate_image{
+        width: 300px;
+    }
+    .teammate_name{
+        font-size: 1em;
+    }
+    .teammate_description{
+        font-size: 1em;
+    }
+}
 
 /* styles for big screens */
 @media(min-width: 900px){
@@ -513,6 +528,7 @@ i{
     .team_container{
         width: 80%;
     }
+    
     .team_section_wrapper{
         grid-template-columns: repeat(auto-fit,minmax(40%,1fr));
     }
